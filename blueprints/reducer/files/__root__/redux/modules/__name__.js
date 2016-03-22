@@ -9,7 +9,6 @@ export const ACTIONTYPE = 'ACTIONTYPE'
 // If you're unfamiliar with Flow, you are completely welcome to avoid annotating your code, but
 // if you'd like to learn more you can check out: flowtype.org.
 export const <%= camelEntityName %>Action = (payload: Object): Action => ({
-  // employee: string, loginTime: number, company: string
   type: ACTIONTYPE,
   payload: payload
 })
