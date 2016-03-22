@@ -39,7 +39,7 @@ export const actions = {
 // ------------------------------------
 // Action Handlers
 // ------------------------------------
-export type <%= pascalEntityName %>State = {}
+export type <%= pascalEntityName %>State = {};
 
 const initialState: <%= pascalEntityName %>State = {}
 const ACTION_HANDLERS = {
