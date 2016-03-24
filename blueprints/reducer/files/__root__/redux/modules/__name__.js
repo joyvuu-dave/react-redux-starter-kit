@@ -35,19 +35,23 @@ export const actions = {
 }
 
 // ------------------------------------
+// Model
+// ------------------------------------
+export type <%= pascalEntityName %>Schema = {};
+
+const initialState: <%= pascalEntityName %>Schema = {}
+
+// ------------------------------------
 // Action Handlers
 // ------------------------------------
-export type <%= pascalEntityName %>State = {};
-
-const initialState: <%= pascalEntityName %>State = {}
 const ACTION_HANDLERS = {
-  [ACTIONTYPE]: (state: <%= pascalEntityName %>State, action): <%= pascalEntityName %>State => ({...state, ...action.payload})
+  [ACTIONTYPE]: (state: <%= pascalEntityName %>Schema, action): <%= pascalEntityName %>Schema => ({...state, ...action.payload})
 }
 
 // ------------------------------------
 // Reducer
 // ------------------------------------
-export default function <%= camelEntityName %>Reducer (state: <%= pascalEntityName %>State = initialState, action: Action): <%= pascalEntityName %>State {
+export default function <%= camelEntityName %>Reducer (state: <%= pascalEntityName %>Schema = initialState, action: Action): <%= pascalEntityName %>Schema {
   const handler = ACTION_HANDLERS[action.type]
   return handler ? handler(state, action) : state
 }
