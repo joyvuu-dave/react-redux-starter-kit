@@ -30,7 +30,7 @@ export const request<%= pascalEntityName %> = (): Function => {
   }
 }
 
-export const actions = {
+export const <%= pascalEntityName %>Actions = {
   <%= camelEntityName %>Action,
   request<%= pascalEntityName %>
 }
