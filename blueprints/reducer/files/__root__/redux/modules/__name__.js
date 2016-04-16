@@ -14,12 +14,6 @@ export const <%= camelEntityName %>Action = (payload: Object): Action => ({
   payload: payload
 })
 
-// This is a thunk, meaning it is a function that immediately
-// returns a function for lazy evaluation. It is incredibly useful for
-// creating async actions, especially when combined with redux-thunk!
-// NOTE: This is solely for demonstration purposes. In a real application,
-// you'd probably want to dispatch an action and let the
-// reducer take care of this logic.
 export const request<%= pascalEntityName %> = (): Function => {
   return (dispatch: Function, getState: Function): Promise => {
     return new Promise((resolve: Function): void => {
